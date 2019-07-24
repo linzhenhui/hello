@@ -15,8 +15,15 @@ $ git reset --hard 1094a    直接到commit Id 对应版本
 git reflog 查看版本更迭情况
 $ rm test.txt   删除文件
 git checkout    用版本库里的版本替换工作区的版本
-
+$ ssh-keygen -t rsa -C "281185344@qq.com" 创建SSH KEY
     远程GIT网站库
 ...或从命令行推送现有存储库
-git remote add origin https://github.com/linzhenhui/XXX.git
- git push -u origin master
+echo“#plane”>> README.md 
+git init 
+git add README.md 
+git commit -m“first commit” 
+git remote add origin https://github.com/linzhenhui/hello.git   设置远端版本库地址
+git remote add origin git@github.com：linzhenhui / plane.git    或者这样
+ git push -u origin master 这些是第一次才需要干的事情
+
+$ git push origin master 后期上传远程版本库只需要这个
